@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    background: #304346;
+    color: #090d0e;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+    border-bottom: 3px solid #364b4e;
+    margin-bottom: 9px;
+}
+
+h2 {
+    border-bottom: 1px solid #364b4e;
+    margin-bottom: 2px;
+}
+
+code { 
+    background: white; 
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+    padding: 1px 4px 2px 4px;
+}
+
+blockquote {
+    border-left: 3px solid #224B4B;
+    color: #224B4B;
+    margin: 10px 0 10px 25px;
+    padding-left: 5px;
+}
+
+ul, ol {
+    margin-left: 15px;
+}
+
+#root {
+    padding: 30px;
+}
+
+.container {
+    background: #63707e;
+    border: 1px solid #1b1e20;
+    border-radius: 2%;
+    box-shadow: 10px 10px 13px -4px rgba(0,0,0,0.75)
+}
+
+.editor-container {
+    margin-bottom: 25px;
+}
+
+.title {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.5em;
+    padding: 10px 20px 10px 20px;
+}
+
+.editor-container textarea {
+    background: #dfe2e5;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    border-top: 1px solid #1b1e20;
+    min-height: 200px;
+    padding: 10px;
+    resize: vertical;
+    width: 100%;
+}
+
+#preview {
+    background: #dfe2e5;
+    border-top: 1px solid #1b1e20;
+    padding: 25px;
+}
+
+img {
+    width: 85%;
+}
+
+@media only screen and (min-width: 1000px){
+
+    .app-container {
+        display: flex;
+    }
+
+    .container {
+        box-shadow: 4px 15px 13px -4px rgba(0,0,0,0.75);
+        height: 90vh;
+        width: 50%;
+    }
+
+    .editor-container {
+        margin: 0 20px 0 0;
+    }
+
+    #editor {
+        height: 90vh;
+    }
+
+    .editor-container textarea {
+        min-height: none;
+        height: 90%;
+        resize: vertical;
+    }
+
+    .previewer-container {
+        overflow: scroll;
+    }
+
+    img {
+        width: auto;
+    }
+
+}
